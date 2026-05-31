@@ -1,0 +1,22 @@
+[Unit]
+Description=Garcia del Mar reservation backend (Flask + gunicorn)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/garcia-del-mar
+EnvironmentFile=/etc/garcia-del-mar/env
+ExecStart=/var/www/garcia-del-mar/.venv/bin/gunicorn \
+    --workers 2 \
+    --bind 127.0.0.1:5000 \
+    --timeout 30 \
+    --access-logfile /var/log/garcia-del-mar/access.log \
+    --error-logfile  /var/log/garcia-del-mar/error.log \
+    app:app
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

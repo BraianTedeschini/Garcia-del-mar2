@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0908">
+  <title>García del Mar — Inca · Sushi · Buenos Aires</title>
+  <meta name="description" content="García del Mar. Cocina nikkei en Buenos Aires. El mar peruano, la precisión japonesa.">
+  <meta property="og:title" content="García del Mar — Inca · Sushi">
+  <meta property="og:description" content="Donde el mar peruano encuentra el rigor japonés.">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:image" content="assets/hero.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/hero.jpg" type="image/jpeg" fetchpriority="high">
+
+  <!-- Tipografías editoriales legibles: Fraunces (display variable, mucho carácter) + Lora (cuerpo, muy legible en pantalla) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon SVG inline minimalista: monograma G-M dorado sobre tinta -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0908'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='18' font-style='italic' fill='%23c8a96a' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Grano SVG persistente — textura "filme" sobre todo -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ─────────── NAV ─────────── -->
+<header class="nav" data-nav>
+  <a class="brand" href="#">
+    <span class="brand-mark">García del Mar</span>
+    <span class="brand-tag">Inca · Sushi</span>
+  </a>
+  <nav class="nav-links" aria-label="Navegación principal">
+    <a href="#filosofia">Filosofía</a>
+    <a href="#carta">Carta</a>
+    <a href="#espacio">Espacio</a>
+    <a href="#reserva" class="nav-cta">Reservar</a>
+  </nav>
+</header>
+
+<!-- ─────────── HERO ─────────── -->
+<section class="hero" id="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="none" poster="assets/hero.jpg">
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="hero-frame">
+    <div class="hero-meta">
+      <span>Restaurante</span>
+      <span class="dot">·</span>
+      <span>Nikkei</span>
+      <span class="dot">·</span>
+      <span>MMXXVI</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="hero-line"><span>García</span></span>
+      <span class="hero-line"><span><em>del</em> Mar</span></span>
+    </h1>
+
+    <p class="hero-tagline">
+      <span class="hero-rule"></span>
+      Donde el mar peruano encuentra el rigor japonés.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#reserva" class="btn btn-solid">Reservar mesa</a>
+      <a href="#carta" class="btn btn-ghost">Ver la carta</a>
+    </div>
+  </div>
+
+  <div class="hero-foot" aria-hidden="true">
+    <div class="hero-foot-line"></div>
+    <span class="hero-foot-label">Bajá para descubrir</span>
+    <div class="hero-foot-line"></div>
+  </div>
+</section>
+
+<!-- ─────────── FILOSOFÍA ─────────── -->
+<section class="philosophy" id="filosofia">
+  <span class="ornament-kanji" aria-hidden="true">García<br><em>del</em> Mar</span>
+  <div class="philosophy-inner">
+    <span class="kicker">— Filosofía</span>
+    <h2 class="display-title">El mar como lengua común.</h2>
+    <p class="philosophy-lede">
+      <span class="dropcap">L</span>a cocina nikkei nació en el puerto del Callao, donde inmigrantes
+      japoneses reinterpretaron el ceviche con la precisión del sushi. En García del Mar honramos
+      ese gesto: producto local, técnica japonesa, sazón peruana. Cada plato es un puente entre dos
+      geografías que el agua salada hizo amigas.
+    </p>
+    <span class="ornament" aria-hidden="true">⁕</span>
+  </div>
+</section>
+
+<!-- ─────────── CARTA ─────────── -->
+<section class="menu" id="carta">
+  <header class="menu-intro">
+    <span class="kicker">— La carta</span>
+    <h2 class="display-title">Cinco actos.</h2>
+    <p class="menu-subtitle"><em>Una progresión pensada para compartir.</em></p>
+  </header>
+
+  <!-- ACTO I: ENTRADAS -->
+  <article class="act">
+    <header class="act-head">
+      <span class="act-numeral">I</span>
+      <h3>Entradas</h3>
+      <span class="act-flourish">para empezar</span>
+    </header>
+    <ul class="act-list">
+      <li class="dish" data-img="assets/mariscos.webp">
+        <h4>Empanadas de mariscos</h4>
+        <p class="dish-desc">Frutos de mar, masa crocante</p>
+      </li>
+      <li class="dish" data-img="assets/ceviche.webp">
+        <h4>Chicharrón de calamar</h4>
+        <p class="dish-desc">Crujiente, alioli cítrico</p>
+      </li>
+      <li class="dish" data-img="assets/mariscos.webp">
+        <h4>Pulpo a las brasas</h4>
+        <p class="dish-desc">Tierno, ahumado, emulsión de pimentón</p>
+      </li>
+      <li class="dish" data-img="assets/mariscos.webp">
+        <h4>Langostinos salteados</h4>
+        <p class="dish-desc">Ajo, limón, toque picante</p>
+      </li>
+    </ul>
+  </article>
+
+  <!-- ACTO II: CEVICHES -->
+  <article class="act">
+    <header class="act-head">
+      <span class="act-numeral">II</span>
+      <h3>Ceviches &amp; tiraditos</h3>
+      <span class="act-flourish">leche de tigre</span>
+    </header>
+    <ul class="act-list">
+      <li class="dish" data-img="assets/ceviche.webp">
+        <h4>Ceviche clásico</h4>
+        <p class="dish-desc">Pesca blanca, leche de tigre tradicional</p>
+      </li>
+      <li class="dish" data-img="assets/ceviche.webp">
+        <h4>Ceviche de salmón</h4>
+        <p class="dish-desc">Salmón fresco, cítricos, toques nikkei</p>
+      </li>
+      <li class="dish" data-img="assets/ceviche.webp">
+        <h4>Ceviche mixto</h4>
+        <p class="dish-desc">Mariscos y pescado, leche de tigre balanceada</p>
+      </li>
+    </ul>
+  </article>
+
+  <!-- ACTO III: SUSHI -->
+  <article class="act">
+    <header class="act-head">
+      <span class="act-numeral">III</span>
+      <h3>Sushi &amp; rolls</h3>
+      <span class="act-flourish">arroz al punto</span>
+    </header>
+    <ul class="act-list">
+      <li class="dish" data-img="assets/sushi.webp">
+        <h4>Roll clásico</h4>
+        <p class="dish-desc">Relleno tradicional, presentación impecable</p>
+      </li>
+      <li class="dish" data-img="assets/sushi.webp">
+        <h4>Sushi premium nikkei</h4>
+        <p class="dish-desc">Selección con toques peruanos</p>
+      </li>
+      <li class="dish" data-img="assets/sushi.webp">
+        <h4>Nigiri salmón</h4>
+        <p class="dish-desc">Nigiri clásico, arroz en su punto</p>
+      </li>
+    </ul>
+  </article>
+
+  <!-- ACTO IV: PRINCIPALES -->
+  <article class="act">
+    <header class="act-head">
+      <span class="act-numeral">IV</span>
+      <h3>Principales</h3>
+      <span class="act-flourish">de la casa</span>
+    </header>
+    <ul class="act-list">
+      <li class="dish" data-img="assets/mariscos.webp">
+        <h4>Arroz con mariscos</h4>
+        <p class="dish-desc">Meloso, mariscos frescos del día</p>
+      </li>
+      <li class="dish" data-img="assets/sushi.webp">
+        <h4>Risotto cremoso</h4>
+        <p class="dish-desc">Al dente, manteca y parmesano</p>
+      </li>
+      <li class="dish" data-img="assets/sushi.webp">
+        <h4>Salmón grillado</h4>
+        <p class="dish-desc">Salsa cítrica, vegetales asados</p>
+      </li>
+      <li class="dish" data-img="assets/mariscos.webp">
+        <h4>Pesca blanca <em>gourmet</em></h4>
+        <p class="dish-desc">Filete del día, emulsión especial</p>
+      </li>
+    </ul>
+  </article>
+
+  <!-- ACTO V: POSTRES Y BARRA -->
+  <article class="act">
+    <header class="act-head">
+      <span class="act-numeral">V</span>
+      <h3>Postres &amp; barra</h3>
+      <span class="act-flourish">para cerrar</span>
+    </header>
+    <ul class="act-list">
+      <li class="dish" data-img="assets/cocteles.webp">
+        <h4>Volcán de chocolate</h4>
+        <p class="dish-desc">Centro fundente, helado artesanal</p>
+      </li>
+      <li class="dish" data-img="assets/cocteles.webp">
+        <h4>Tres leches</h4>
+        <p class="dish-desc">Clásico húmedo y delicado</p>
+      </li>
+      <li class="dish" data-img="assets/cocteles.webp">
+        <h4>Postre de pistacho</h4>
+        <p class="dish-desc">Estación, frutos secos</p>
+      </li>
+      <li class="dish" data-img="assets/cocteles.webp">
+        <h4>Limonada de la casa</h4>
+        <p class="dish-desc">Hierbas frescas y limón</p>
+      </li>
+      <li class="dish" data-img="assets/cocteles.webp">
+        <h4>Cóctel de autor</h4>
+        <p class="dish-desc">Creación de la barra · consultá por día</p>
+      </li>
+    </ul>
+  </article>
+
+  <p class="menu-foot"><em>Sujeto a disponibilidad de mercado · consultá por especiales del día</em></p>
+</section>
+
+<!-- ─────────── ATMÓSFERA (galería asimétrica) ─────────── -->
+<section class="atmosphere" id="atmosfera">
+  <header class="atmosphere-head">
+    <span class="kicker">— Atmósfera</span>
+    <h2 class="display-title">Cuatro paredes, una historia.</h2>
+  </header>
+
+  <div class="atmosphere-grid">
+    <figure class="ag-tall">
+      <picture>
+        <source type="image/webp" srcset="assets/cocteles.webp">
+        <img src="assets/cocteles.jpg" alt="Coctelería de autor en García del Mar" loading="lazy" decoding="async">
+      </picture>
+      <figcaption>La barra, al caer la noche</figcaption>
+    </figure>
+    <figure class="ag-wide">
+      <picture>
+        <source type="image/webp" srcset="assets/barra.webp">
+        <img src="assets/barra.jpg" alt="Barra principal del salón" loading="lazy" decoding="async">
+      </picture>
+      <figcaption>Barra principal · 8 lugares</figcaption>
+    </figure>
+    <figure class="ag-square">
+      <picture>
+        <source type="image/webp" srcset="assets/salon1.webp">
+        <img src="assets/salon1.jpg" alt="Salón comedor" loading="lazy" decoding="async">
+      </picture>
+      <figcaption>Salón &middot; 42 cubiertos</figcaption>
+    </figure>
+    <figure class="ag-square">
+      <picture>
+        <source type="image/webp" srcset="assets/salon2.webp">
+        <img src="assets/salon2.jpg" alt="Detalle del salón" loading="lazy" decoding="async">
+      </picture>
+      <figcaption>Detalle &middot; mesa privada</figcaption>
+    </figure>
+    <figure class="ag-wide2">
+      <picture>
+        <source type="image/webp" srcset="assets/salon3.webp">
+        <img src="assets/salon3.jpg" alt="Iluminación nocturna del salón" loading="lazy" decoding="async">
+      </picture>
+      <figcaption>Iluminación nocturna</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ─────────── EL ESPACIO ─────────── -->
+<section class="space" id="espacio">
+  <div class="space-image">
+    <picture>
+      <source type="image/webp" srcset="assets/sushi.webp">
+      <img src="assets/sushi.jpg" alt="Plato de sushi nikkei" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="space-content">
+    <span class="kicker">— El espacio</span>
+    <h2 class="display-title">Una barra<br>que cuenta historias.</h2>
+    <p>
+      Diseñado por artesanos locales con maderas oscuras y bronce envejecido. Cada rincón —
+      desde la barra de mármol hasta el privé — está pensado para que una cena se vuelva,
+      sin avisar, una noche memorable.
+    </p>
+    <dl class="space-facts">
+      <div><dt>Capacidad</dt><dd>42 cubiertos</dd></div>
+      <div><dt>Barra</dt><dd>8 lugares</dd></div>
+      <div><dt>Privé</dt><dd>Hasta 12 personas</dd></div>
+      <div><dt>Reserva</dt><dd>Recomendada</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ─────────── RESERVA ─────────── -->
+<section class="reservation" id="reserva">
+  <div class="reservation-bg" aria-hidden="true"></div>
+
+  <header class="reservation-head">
+    <span class="kicker">— Reservar</span>
+    <h2 class="display-title">Tu mesa te espera.</h2>
+    <p class="reservation-sub"><em>Confirmamos por WhatsApp en menos de una hora.</em></p>
+  </header>
+
+  <form id="formReserva" class="form" novalidate>
+    <div class="form-msg" id="reservaMsg" role="status" aria-live="polite"></div>
+
+    <div class="form-row form-row-2">
+      <label class="field">
+        <span class="field-label">Nombre</span>
+        <input id="nombre" name="nombre" type="text" required maxlength="80" autocomplete="name" placeholder="Como te llamamos">
+      </label>
+      <label class="field">
+        <span class="field-label">Teléfono / WhatsApp</span>
+        <input id="telefono" name="telefono" type="tel" required maxlength="20" inputmode="tel" autocomplete="tel" pattern="[\d+()\-\s]{6,20}" placeholder="Con código de área">
+      </label>
+    </div>
+
+    <div class="form-row form-row-2">
+      <label class="field">
+        <span class="field-label">Fecha</span>
+        <input id="fecha" name="fecha" type="date" required>
+      </label>
+      <div class="field">
+        <span class="field-label">Personas</span>
+        <div class="stepper" data-stepper>
+          <button type="button" class="stepper-btn" data-step="-1" aria-label="Menos personas">−</button>
+          <input id="personas" name="personas" type="number" value="2" min="1" max="20" inputmode="numeric" required>
+          <button type="button" class="stepper-btn" data-step="1" aria-label="Más personas">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <span class="field-label">Turno</span>
+      <div class="segmented" role="radiogroup" aria-label="Turno">
+        <button type="button" class="seg-btn" data-turno="AM" role="radio" aria-checked="false">
+          <span class="seg-title">Mediodía</span>
+          <span class="seg-sub">12:00 – 13:30</span>
+        </button>
+        <button type="button" class="seg-btn" data-turno="PM" role="radio" aria-checked="false">
+          <span class="seg-title">Noche</span>
+          <span class="seg-sub">20:00 – 21:30</span>
+        </button>
+      </div>
+      <input type="hidden" id="turno" name="turno" required>
+    </div>
+
+    <div class="form-row" id="timeRow" hidden>
+      <span class="field-label">Hora</span>
+      <div class="time-slots" id="timeSlots" role="radiogroup" aria-label="Hora"></div>
+      <input type="hidden" id="hora" name="hora" required>
+    </div>
+
+    <label class="field">
+      <span class="field-label">¿Algo especial? <em>(opcional)</em></span>
+      <textarea id="notas" name="notas" rows="3" maxlength="500" placeholder="Cumpleaños, aniversario, alergias…"></textarea>
+    </label>
+
+    <button id="btnReserva" type="submit" class="btn-confirm">
+      <span class="btn-label">Confirmar reserva</span>
+      <span class="btn-arrow" aria-hidden="true">→</span>
+    </button>
+  </form>
+</section>
+
+<!-- ─────────── FOOTER ─────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>García del Mar</h3>
+      <span>Inca · Sushi</span>
+    </div>
+
+    <div class="footer-cols">
+      <div>
+        <span class="kicker">Dirección</span>
+        <p>Av. del Mar 1234<br>Buenos Aires, Argentina</p>
+      </div>
+      <div>
+        <span class="kicker">Horarios</span>
+        <p>Mar — Dom<br>12:00 · 14:00<br>20:00 · 24:00</p>
+      </div>
+      <div>
+        <span class="kicker">Contacto</span>
+        <p>+54 11 0000 0000<br>hola@garciadelmar.com</p>
+      </div>
+      <div>
+        <span class="kicker">Instagram</span>
+        <p>@garciadelmar</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-rule"></div>
+
+  <div class="footer-bottom">
+    <span>© MMXXVI · García del Mar</span>
+    <span class="footer-bottom-flourish" aria-hidden="true">⁕</span>
+    <span>Una experiencia nikkei</span>
+  </div>
+</footer>
+
+<!-- Vista previa flotante (sólo carta · sólo desktop) -->
+<img id="floatingImg" class="floating-img" alt="" aria-hidden="true">
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
